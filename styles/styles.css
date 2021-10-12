@@ -1,0 +1,207 @@
+
+/* General */
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+/* Index */
+div#general{
+    display: flex;
+    justify-content: center;
+}
+
+/* Sección general del Quiz */
+section.total{
+    display: flex;
+    justify-content: center;
+    background-color: #f8fee5;
+    border-radius: 5px;
+    align-items: center;
+}
+
+form{
+    border: 2px solid rgba(149, 158, 196, 0.185);
+    height: 900px;
+    width: 100%;
+}
+
+/* Pregunta */
+div.questionTitle{
+    text-align: center;
+}
+
+/* Imagen */
+div.questionImg {
+    display: flex;
+    justify-content: center;
+} 
+div.questionImg>img{
+    max-height: 300px;
+    max-width: 550px;
+}
+
+/* Respuesta de texto */
+div.textquestionAnswer{
+    display: flex;
+    justify-content: center;
+}
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+/* Listas */
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+div.answerblockone{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.answerblocktwo{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.answerblockthree{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+li.optionone{
+    background-color: rgb(198, 216, 191);
+    padding: 40px;
+    margin: 10px;
+    width: 30%;
+}
+
+li.optiontwo{
+    background-color: rgb(191, 216, 215);
+    padding: 40px;
+    margin: 10px;
+    width: 30%;
+}
+
+li.optionthree{
+    background-color: rgb(216, 214, 191);
+    padding: 40px;
+    margin: 10px;
+    width: 30%;
+}
+
+li.optionfour{
+    background-color: rgb(191, 201, 216);
+    padding: 40px;
+    margin: 10px;
+    width: 30%;
+}
+
+li.optionfive{
+    background-color: rgb(161, 211, 169);
+    padding: 40px;
+    margin: 10px;
+    width: 30%;
+}
+
+/* Ocultar radiobutton */
+.questionAnswer input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}  
+.questionAnswer label {
+      display: inline-block;
+      padding: 10px 20px;
+}
+
+.questionAnswer input[type="radio"]:focus + label {
+    border: 2px solid rgb(50, 202, 164);
+    background-color: rgba(74, 202, 202, 0.144);
+}
+
+/* Ocultar checkbox */
+.questionAnswer input[type="checkbox"] {
+    /* position: fixed; */
+    /* width: 0; */
+  }  
+
+.questionAnswer input[type="checkbox"]:checked + label  {
+    border: 2px solid rgb(50, 202, 164);
+    background-color: rgba(74, 202, 202, 0.144);
+}
+
+
+/* Boton */
+div.questionButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: #3674c4b0;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #3673c4;
+  }
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 400px){
+    div.answerblockone{
+        padding: 0%;
+    }
+    
+    div.answerblocktwo{
+        padding: 0%;
+    }
+    div.answerblockthree{
+        padding: 0%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 400px){
+div#general{
+    margin: 10px;
+    }
+img{
+    width: 200px;
+    }
+p{
+    max-width: 300px;
+}
+button[type=submit] {
+    position: relative;
+  }
+
+div.answerblockone{
+    padding: 0%;
+}
+
+div.answerblocktwo{
+    padding: 0%;
+}
+div.answerblockthree{
+    padding: 0%;
+}
+
+}
